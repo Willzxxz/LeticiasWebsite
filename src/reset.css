@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Poppins:wght@300;400;500&display=swap');
+
+html {
+  font-size: 1px;
+  -webkit-text-size-adjust: none;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 721px) and (max-width: 1439px) {
+  html {
+    font-size: 0.0696111111vw;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 0.27777777778vw;
+  }
+}
