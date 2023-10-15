@@ -41,52 +41,69 @@ export default function ContactForm() {
       <Center>
         <VStack>
           <Text mt='30rem' fontSize='36rem' color='white'>
-            Contact Form
+            Formulario de Contato
           </Text>
           <form ref={form} onSubmit={sendEmail}>
-            <HStack gap='11rem' px='11rem' pt='44rem' py='16rem'>
+            <HStack gap='11rem' px='11rem' pt='44rem' py='16rem' color='white'>
               <Input
-                placeholder='First Name'
-                bg='white'
+                placeholder='Nome'
+                borderBottom='1rem solid'
+                border=''
                 required
                 name='first'
               ></Input>
               <Input
-                placeholder='Last Name'
-                bg='white'
+                placeholder='Sobre Nome'
                 required
                 name='last'
+                borderBottom='1rem solid'
+                border=''
               ></Input>
             </HStack>
-            <HStack gap='11rem' px='11rem' py='16rem'>
+            <HStack gap='11rem' px='11rem' py='16rem' color='white'>
               <Input
                 placeholder='Email'
                 type='email'
-                bg='white'
+                borderBottom='1rem solid'
+                border=''
                 required
                 name='user_email'
               ></Input>
               <Input
-                placeholder='Phone Number'
-                bg='white'
+                placeholder='Numero de telephone'
+                borderBottom='1rem solid'
+                border=''
                 required
                 name='phone'
               ></Input>
             </HStack>
-            <HStack gap='11rem' px='11rem' py='16rem'>
+            <HStack gap='11rem' px='11rem' py='16rem' color='white'>
               <Input
-                placeholder='State/country you live'
-                bg='white'
+                placeholder='Estado/Pais'
+                borderBottom='1rem solid'
+                border=''
                 required
                 name='state'
               ></Input>
-              <Input placeholder='Subject' bg='white' name='subject'></Input>
+              <Input
+                placeholder='Assunto'
+                borderBottom='1rem solid'
+                border=''
+                name='subject'
+              ></Input>
             </HStack>
-            <Box my='16rem' bg='white' mx='11rem' h='fit-content'>
+            <Box
+              my='16rem'
+              borderBottom='1rem solid'
+              border=''
+              mx='11rem'
+              h='fit-content'
+              color='white'
+            >
               <Textarea
-                placeholder='Your Message'
+                placeholder='Sua Mensagem'
                 rows='3'
-                bg='white'
+                border=''
                 required
                 resize='none'
                 name='message'
@@ -95,7 +112,7 @@ export default function ContactForm() {
             </Box>
             <Center>
               <Button w='260rem' type='submit' value='Send'>
-                Send
+                Enviar
               </Button>
             </Center>
           </form>

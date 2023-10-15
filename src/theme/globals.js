@@ -17,6 +17,7 @@ export const styles = {
       fontSize: '16rem',
       lineHeight: 'normal',
       fonts: fonts,
+      overflowX: 'hidden',
     },
   },
 }

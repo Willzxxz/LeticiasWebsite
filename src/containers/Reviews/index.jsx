@@ -7,7 +7,7 @@ import Testimonials from './testimonials'
 
 export default function Reviews() {
   return (
-    <Box bgColor='#003849' fontFamily='Montserrat' mt='10rem'>
+    <Box bgColor='#003849' fontFamily='Montserrat' mt='10rem' id='depoimentos'>
       <Center h='164rem'>
         <Text mt='60rem' fontSize='48rem' color='white' fontWeight='400'>
           Estais em boas maos

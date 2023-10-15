@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Welcome page</title>
+        <title>Leticia Portelinha</title>
       </Head>
       <Navbar />
       <Hero />
