@@ -1,5 +1,18 @@
-import { Box, Center, HStack, Text } from '@chakra-ui/react'
 import React from 'react'
+
+import { Box, Center, HStack, Text } from '@chakra-ui/react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import {
+  faWhatsapp,
+  faInstagram,
+  faFacebook,
+  faLinkedin,
+  faXTwitter,
+  faTiktok,
+  faTelegram,
+} from '@fortawesome/free-brands-svg-icons'
+import Link from 'next/link'
 
 export default function index() {
   return (
@@ -9,13 +22,9 @@ export default function index() {
       mt='-115rem'
       fontFamily='Poppins'
     >
-      <Box
-        mt='99rem'
-        position='absolute'
-        border='1px solid black'
-        w='91%'
-        mx='55rem'
-      />
+      <Box mt='99rem' position='absolute' w='1440rem'>
+        <Box border='1px solid black' w='1350rem' mx='auto' />
+      </Box>
       <Box w='745rem' h='85rem' position='absolute' mt='198rem'>
         <HStack>
           <Box w='326rem' h='85rem' bgColor='#5F2A2E'>
@@ -27,7 +36,7 @@ export default function index() {
               fontWeight='300'
               mt='-40rem'
             >
-              Who am I
+              Quem sou?
             </Text>
             <Text fontSize='64rem' fontWeight='400' color='white' ml='55rem'>
               Leticia
@@ -38,35 +47,112 @@ export default function index() {
               Portelinha
             </Text>
             <Text
-              fontSize='24rem'
+              fontSize='20rem'
               fontWeight='400'
               color='white'
               ml='17rem'
-              w='548rem'
+              w='550rem'
             >
-              I am an Immigration Attorney, and I make getting your citizenship
-              quick and easy. With years of experience in the field I take the
-              stress out of planning this huge step in your life.
+              Sou Advogada de Imigração, eu torno o processo de obtenção de sua
+              cidadania rápido e fácil. Com muitos anos de experiência na área,
+              elimino o estresse de planejar esse grande passo em sua vida.
             </Text>
           </Box>
         </HStack>
       </Box>
       <Box bgColor='#8B565E' w='291rem' h='full' ml='34rem' fontWeight='400'>
         <HStack
-          position='absolute'
-          bottom='10rem'
           justifyContent='space-between'
           w='fit-content'
+          pt='730rem'
+          zIndex='10'
         >
-          <Text color='white' fontSize='15rem' w='300rem' px='35rem'>
-            Leticiaportelinha@gmail.com
-          </Text>
-          <Text color='white' fontSize='15rem' w='300rem'>
-            <Center>+55 (48) 9932-0387</Center>
-          </Text>
-          <Text color='white' fontSize='15rem' w='300rem' px='35rem'>
-            <Center>Social Medias</Center>
-          </Text>
+          <Center
+            color='white'
+            fontSize='15rem'
+            w='290rem'
+            _hover={{ color: 'black' }}
+          >
+            <FontAwesomeIcon icon={faEnvelope} size='xl' />
+            <Link
+              passHref
+              href='mailto:leticiaportelinha@gmail.com?subject=Cidadenia Pelo Site&body=Ola, procuro informações sobre...'
+            >
+              <a target='_blank'>
+                <Box ml='6rem' _hover={{ color: 'black' }}>
+                  Leticiaportelinha@gmail.com
+                </Box>
+              </a>
+            </Link>
+          </Center>
+          <Center
+            color='white'
+            fontSize='15rem'
+            w='290rem'
+            _hover={{ color: 'black' }}
+          >
+            <FontAwesomeIcon
+              icon={faWhatsapp}
+              beatFade
+              style={{ color: '#098b30' }}
+              size='2xl'
+            />
+            <Link passHref href='https://wa.me/5548999320387'>
+              <a target='_blank'>
+                <Box ml='6rem'>+55 (48) 9932-0387</Box>
+              </a>
+            </Link>
+          </Center>
+
+          <Center color='white' fontSize='15rem' w='290rem' gap='20rem'>
+            <Link passHref href='https://www.instagram.com/'>
+              <a target='_blank'>
+                <Box _hover={{ color: 'black' }}>
+                  <FontAwesomeIcon icon={faInstagram} size='xl' />
+                </Box>
+              </a>
+            </Link>
+
+            <Link passHref href='https://www.facebook.com/'>
+              <a target='_blank'>
+                <Box _hover={{ color: 'black' }}>
+                  <FontAwesomeIcon icon={faFacebook} size='xl' />
+                </Box>{' '}
+              </a>
+            </Link>
+
+            <Link passHref href='https://www.linkedin.com/'>
+              <a target='_blank'>
+                <Box _hover={{ color: 'black' }}>
+                  <FontAwesomeIcon icon={faLinkedin} size='xl' />
+                </Box>{' '}
+              </a>
+            </Link>
+
+            <Link passHref href='https://www.x.com/'>
+              <a target='_blank'>
+                <Box _hover={{ color: 'black' }}>
+                  <FontAwesomeIcon icon={faXTwitter} size='xl' />
+                </Box>{' '}
+              </a>
+            </Link>
+
+            <Link passHref href='https://www.tiktok.com/'>
+              <a target='_blank'>
+                <Box _hover={{ color: 'black' }}>
+                  <FontAwesomeIcon icon={faTiktok} size='xl' />
+                </Box>{' '}
+              </a>
+            </Link>
+
+            <Link passHref href='https://www.telegram.com/'>
+              <a target='_blank'>
+                <Box _hover={{ color: 'black' }}>
+                  <FontAwesomeIcon icon={faTelegram} size='xl' />
+                </Box>{' '}
+              </a>
+            </Link>
+          </Center>
         </HStack>
       </Box>
       <Box
@@ -74,7 +160,7 @@ export default function index() {
         position='absolute'
         zIndex='2'
         bgColor='#470800'
-        w='100%'
+        w='1440rem'
         h='25rem'
       />
     </Box>

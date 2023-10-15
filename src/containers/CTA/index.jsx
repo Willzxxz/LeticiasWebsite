@@ -5,7 +5,7 @@ export default function CTA() {
   return (
     <Box bgColor='#003849' fontFamily='Poppins' mt='0rem'>
       <Box pt='130rem'>
-        <Divider w='890rem' ml='auto' />
+        <Divider w='990rem' ml='auto' />
       </Box>
       <Center mt='-60rem'>
         <Text
@@ -14,12 +14,12 @@ export default function CTA() {
           color='white'
           fontWeight='400'
           textAlign='right'
-          w='900rem'
+          w='1000rem'
           ml='auto'
           pr='100rem'
         >
-          Talk to an expert now and leave the bureaucracy of your European
-          Citizenship to us!
+          Fale com um especialista agora e deixe a burocracia da sua cidadania
+          europeia conosco!
         </Text>
       </Center>
       <Text
@@ -28,15 +28,23 @@ export default function CTA() {
         color='white'
         fontWeight='200'
         textAlign='right'
-        w='730rem'
+        w='800rem'
         ml='auto'
         pr='100rem'
         fontFamily='Montserrat'
       >
-        Get an estimate now in less than 10 minutes and find out what you need
-        to do to open the doors of Europe for you.
+        Obtenha uma estimativa agora em menos de 10 minutos e descubra o que
+        precisa fazer para abrir as portas da Europa para você.
       </Text>
-      <Box w='100%' bgColor='#003849' mt='-350rem'>
+      <Box
+        w='100%'
+        bgColor='#003849'
+        mt='-350rem'
+        zIndex='-10'
+        pointerEvents='none'
+        userSelect='none'
+        draggable='false'
+      >
         <Image src='./images/abstractbg.png' />
       </Box>
     </Box>
