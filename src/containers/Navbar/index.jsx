@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <Box w='auto'>
+    <Box w='1440rem' mx='auto'>
       <HStack justifyContent='space-between'>
         <Link passHref href='/'>
           <a>

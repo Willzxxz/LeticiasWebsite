@@ -5,7 +5,7 @@ import 'reset.css'
 export default function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
-      <Box as='main' w='1440rem' mx='auto'>
+      <Box as='main' mx='auto'>
         <Component {...pageProps} />
       </Box>
     </ChakraProvider>
