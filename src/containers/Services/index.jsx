@@ -24,7 +24,7 @@ export default function Services() {
           w='1100rem'
           bgColor='#5F2A2E'
           rounded='100rem'
-          ml='auto'
+          ml='200rem'
         >
           <Center>
             <Stack>
