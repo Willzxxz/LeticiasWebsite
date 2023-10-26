@@ -70,7 +70,7 @@ export default function OperateSection() {
           </Box>
         )}
         <Box w={{ d: '1440rem', m: '375rem' }} display={'flex'} mx='auto'>
-          <Box ml='750rem' mt='60rem' p='20rem' w='fit-content'>
+          <Box ml={{ d: '750rem' }} mt='20rem' p='20rem' w='fit-content'>
             <Text
               fontSize={{ d: '40rem', m: '26rem' }}
               color='white'
