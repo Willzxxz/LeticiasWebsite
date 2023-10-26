@@ -230,20 +230,26 @@ const MobileNav = () => {
         {NAV_ITEMS.map((navItem) => (
           <MobileNavItem key={navItem.label} {...navItem} />
         ))}
-        <Button
-          fontSize='24rem'
-          rounded='40rem'
-          bgColor='#8B565E'
-          color='white'
-          h='50rem'
-          w='220rem'
-          _hover={{
-            bg: '#5F2A2E',
-            transform: 'scale(1.05)',
-          }}
-        >
-          Consulte Agora
-        </Button>
+        <Link passHref href='https://wa.me/5548999320387'>
+          <a target='_blank'>
+            {!isMobile && (
+              <Button
+                fontSize='24rem'
+                rounded='40rem'
+                bgColor='#8B565E'
+                color='white'
+                h='50rem'
+                w='220rem'
+                _hover={{
+                  bg: '#5F2A2E',
+                  transform: 'scale(1.05)',
+                }}
+              >
+                Consulte Agora
+              </Button>
+            )}
+          </a>
+        </Link>
       </Stack>
     </Box>
   )
