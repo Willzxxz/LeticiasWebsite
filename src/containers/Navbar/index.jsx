@@ -251,6 +251,7 @@ const MobileNav = () => {
               color='white'
               h='50rem'
               w='220rem'
+              mt='30rem'
               _hover={{
                 bg: '#5F2A2E',
                 transform: 'scale(1.05)',
