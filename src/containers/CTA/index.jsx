@@ -16,7 +16,7 @@ export default function CTA() {
       bgColor='#003849'
       fontFamily='Poppins'
       w={{ d: 'full', m: '375rem' }}
-      h={{ d: '500rem' }}
+      h={{ d: '561rem' }}
       mt='0rem'
       pt='50rem'
     >

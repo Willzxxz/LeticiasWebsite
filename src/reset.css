@@ -5,6 +5,7 @@ html {
   -webkit-text-size-adjust: none;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Poppins', sans-serif;
+  /* overflow-x: hidden; */
 }
 
 @media (min-width: 721px) and (max-width: 1439px) {

@@ -185,7 +185,7 @@ export default function Footer() {
                 </Center>
               </Box>
             </Box>
-            <Box bgColor='#653034' h='35rem' mt='-20rem'>
+            <Box bgColor='#653034' h='35rem' mt={{ m: '-20rem' }}>
               <Divider />
               <VStack
                 justifyContent='space-between'
@@ -262,14 +262,8 @@ export default function Footer() {
           </Box>
         </Box>
       ) : (
-        <Box
-          bgColor='#003849'
-          h='600rem'
-          fontFamily='Poppins'
-          mt='0rem'
-          pt='61rem'
-        >
-          <Box bgColor='white' w='100%' h='15rem' />
+        <Box bgColor='#003849' h='600rem' fontFamily='Poppins' mt='0rem'>
+          <Box bgColor='#5F2A2E' w='100%' h='15rem' />
           <Box w='1440rem' mx='auto' h='500rem'>
             <Box
               w='568rem'

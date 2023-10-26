@@ -30,7 +30,7 @@ export default function index() {
       h='775rem'
       bgGradient='linear-gradient(to-bl, #EBEAE8, #003849)'
       mt={{ m: '-120rem', d: '-130rem' }}
-      w={{ m: '375rem', d: '1440rem' }}
+      w={{ m: '375rem', d: 'full' }}
       fontFamily='Poppins'
       zIndex={-2}
       position={'absolute'}

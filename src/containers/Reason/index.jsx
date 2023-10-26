@@ -10,10 +10,13 @@ import {
   Image,
   Text,
   VStack,
+  useBreakpointValue,
 } from '@chakra-ui/react'
 import React from 'react'
 
 export default function Reason() {
+  const isMobile = useBreakpointValue({ m: true, d: false })
+
   return (
     <Box
       h={{ d: 'full' }}
@@ -168,7 +171,9 @@ export default function Reason() {
           ></Box> */}
         </HStack>
       </Box>
-      <Box zIndex='2' bgColor='#5F2A2E' w='full' h='21rem' />
+      {isMobile && (
+        <Box zIndex='2' bgColor='#5F2A2E' w='full' h='21rem' mt='20rem' />
+      )}
     </Box>
   )
 }

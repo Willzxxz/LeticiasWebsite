@@ -52,6 +52,18 @@ export default function Navbar() {
   }
 
   useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflowY = 'hidden'
+    } else {
+      document.body.style.overflowY = 'auto'
+    }
+
+    return () => {
+      document.body.style.overflowY = 'auto' // Ensure removal when unmounting
+    }
+  }, [isOpen])
+
+  useEffect(() => {
     const handleDocumentClick = (e) => {
       if (mobileMenuRef.current && !mobileMenuRef.current.contains(e.target)) {
         closeMobileMenu()
@@ -232,22 +244,20 @@ const MobileNav = () => {
         ))}
         <Link passHref href='https://wa.me/5548999320387'>
           <a target='_blank'>
-            {!isMobile && (
-              <Button
-                fontSize='24rem'
-                rounded='40rem'
-                bgColor='#8B565E'
-                color='white'
-                h='50rem'
-                w='220rem'
-                _hover={{
-                  bg: '#5F2A2E',
-                  transform: 'scale(1.05)',
-                }}
-              >
-                Consulte Agora
-              </Button>
-            )}
+            <Button
+              fontSize='24rem'
+              rounded='40rem'
+              bgColor='#8B565E'
+              color='white'
+              h='50rem'
+              w='220rem'
+              _hover={{
+                bg: '#5F2A2E',
+                transform: 'scale(1.05)',
+              }}
+            >
+              Consulte Agora
+            </Button>
           </a>
         </Link>
       </Stack>
@@ -280,22 +290,22 @@ const MobileNavItem = ({ label, children, href }) => {
       </Box>
 
       {/* <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
-        <Stack
-          mt={2}
-          pl={4}
-          borderLeft={1}
-          borderStyle={'solid'}
-          borderColor={useColorModeValue('gray.200', 'gray.700')}
-          align={'start'}
-        >
-          {children &&
-            children.map((child) => (
-              <Box as='a' key={child.label} py={2} href={child.href}>
-                {child.label}
-              </Box>
-            ))}
-        </Stack>
-      </Collapse> */}
+          <Stack
+            mt={2}
+            pl={4}
+            borderLeft={1}
+            borderStyle={'solid'}
+            borderColor={useColorModeValue('gray.200', 'gray.700')}
+            align={'start'}
+          >
+            {children &&
+              children.map((child) => (
+                <Box as='a' key={child.label} py={2} href={child.href}>
+                  {child.label}
+                </Box>
+              ))}
+          </Stack>
+        </Collapse> */}
     </Stack>
   )
 }

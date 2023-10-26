@@ -18,7 +18,7 @@ export default function OperateSection() {
         h={{ d: '750rem', m: '520rem' }}
         bgColor='#5F2A2E'
         fontFamily='Poppins'
-        w={{ d: '1440rem', m: '375rem' }}
+        w={{ d: 'full', m: '375rem' }}
         mt={{ m: '674rem', d: '655rem' }}
         mx='auto'
         overflow='hidden'
@@ -69,15 +69,8 @@ export default function OperateSection() {
             ></Image>
           </Box>
         )}
-        <Box w={{ d: '1440rem', m: '375rem' }} px='10rem'>
-          <Box
-            position='absolute'
-            mt={{ d: '60rem', m: '30rem' }}
-            p='20rem'
-            ml={{ d: '750rem', m: '5rem' }}
-            w='fit-content'
-            px='10rem'
-          >
+        <Box w={{ d: '1440rem', m: '375rem' }} display={'flex'} mx='auto'>
+          <Box ml='750rem' mt='60rem' p='20rem' w='fit-content'>
             <Text
               fontSize={{ d: '40rem', m: '26rem' }}
               color='white'
@@ -90,7 +83,7 @@ export default function OperateSection() {
           </Box>
         </Box>{' '}
         <Box
-          mt='150rem'
+          mt='10rem'
           h={{ d: '650rem', m: '550rem' }}
           zIndex='0'
           bgGradient='linear-gradient(to-bl, #FFF, #8B8B8B)'
