@@ -15,38 +15,47 @@ import React from 'react'
 
 export default function Reason() {
   return (
-    <Box h='768rem' bgColor='#003849' fontFamily='Poppins' id='pq'>
-      <Box w='1440rem' mx='auto'>
+    <Box
+      h={{ d: 'full' }}
+      bgColor='#003849'
+      fontFamily='Poppins'
+      w={{ m: '375rem', d: 'full' }}
+      id='pq'
+    >
+      <Box w={{ d: '1440rem', m: '375rem' }} mx='auto'>
         <Box
-          h='193rem'
+          h={{ d: '193rem', m: '100rem' }}
           zIndex='0'
-          bgGradient='linear-gradient(to-r, #5F2A2E 85%, #8B565E 100%)'
-          borderRadius='100rem'
-          w='3100rem'
-          ml='-2300rem'
+          bgGradient={{
+            d: 'linear-gradient(to-r, #5F2A2E 85%, #8B565E 100%)',
+            m: 'linear-gradient(to-r, #5F2A2E 50%, #8B565E 100%)',
+          }}
+          borderRadius={{ d: '100rem' }}
+          w={{ d: '3100rem', m: '' }}
+          ml={{ d: '-2300rem', m: '' }}
         >
-          <Box pl='2250rem'>
-            <Center h='193rem'>
-              <Text fontSize='48rem' color='white'>
+          <Box pl={{ d: '2250rem' }}>
+            <Center h={{ d: '193rem', m: '100rem' }}>
+              <Text fontSize={{ d: '48rem', m: '25rem' }} color='white'>
                 Motivos para me contratar
               </Text>
             </Center>
           </Box>
         </Box>
         <HStack>
-          <Box w='718rem' h='568rem' bgColor='#C6CDD2'>
+          <Box w={{ d: '718rem', m: 'full' }} bgColor='#C6CDD2'>
             <Accordion fontSize='20rem' defaultIndex={[0]}>
               <AccordionItem>
-                <AccordionButton h='70rem'>
-                  <Box as='span' flex='1' fontSize='21rem'>
+                <AccordionButton>
+                  <Box as='span' flex='1' fontSize={{ d: '21rem', m: '16rem' }}>
                     Quem atual nos seus processos?
                   </Box>
-                  <AccordionIcon boxSize='50rem' />
+                  <AccordionIcon boxSize={{ d: '50rem', m: '30rem' }} />
                 </AccordionButton>
                 <AccordionPanel
                   bgColor='#b2b8bd'
                   pb={4}
-                  fontSize='16rem'
+                  fontSize='14rem'
                   minHeight='70rem'
                   textAlign='center'
                 >
@@ -56,15 +65,15 @@ export default function Reason() {
               </AccordionItem>
               <AccordionItem>
                 <AccordionButton>
-                  <Box as='span' flex='1' fontSize='21rem'>
+                  <Box as='span' flex='1' fontSize={{ d: '21rem', m: '16rem' }}>
                     Em quanto tempo voce retorna aos clientes?
                   </Box>
-                  <AccordionIcon boxSize='50rem' />
+                  <AccordionIcon boxSize={{ d: '50rem', m: '30rem' }} />
                 </AccordionButton>
                 <AccordionPanel
                   bgColor='#b2b8bd'
                   pb={4}
-                  fontSize='16rem'
+                  fontSize='14rem'
                   minHeight='70rem'
                   textAlign='center'
                 >
@@ -73,16 +82,16 @@ export default function Reason() {
               </AccordionItem>
               <AccordionItem>
                 <AccordionButton>
-                  <Box as='span' flex='1' fontSize='21rem'>
+                  <Box as='span' flex='1' fontSize={{ d: '21rem', m: '16rem' }}>
                     A quantas consultorias eu tenho direito de fazer sobre o meu
                     caso?
                   </Box>
-                  <AccordionIcon boxSize='50rem' />
+                  <AccordionIcon boxSize={{ d: '50rem', m: '30rem' }} />
                 </AccordionButton>
                 <AccordionPanel
                   bgColor='#b2b8bd'
                   pb={4}
-                  fontSize='16rem'
+                  fontSize='14rem'
                   minHeight='70rem'
                   textAlign='center'
                 >
@@ -92,15 +101,15 @@ export default function Reason() {
               </AccordionItem>
               <AccordionItem>
                 <AccordionButton>
-                  <Box as='span' flex='1' fontSize='21rem'>
+                  <Box as='span' flex='1' fontSize={{ d: '21rem', m: '16rem' }}>
                     Qual e' a importancia da etica no seu jeito de trabalhar?
                   </Box>
-                  <AccordionIcon boxSize='50rem' />
+                  <AccordionIcon boxSize={{ d: '50rem', m: '30rem' }} />
                 </AccordionButton>
                 <AccordionPanel
                   bgColor='#b2b8bd'
                   pb={4}
-                  fontSize='16rem'
+                  fontSize='14rem'
                   minHeight='70rem'
                   textAlign='center'
                 >
@@ -111,15 +120,15 @@ export default function Reason() {
               </AccordionItem>
               <AccordionItem>
                 <AccordionButton>
-                  <Box as='span' flex='1' fontSize='21rem'>
+                  <Box as='span' flex='1' fontSize={{ d: '21rem', m: '16rem' }}>
                     O que voce pensa sobre sigilo profesional?
                   </Box>
-                  <AccordionIcon boxSize='50rem' />
+                  <AccordionIcon boxSize={{ d: '50rem', m: '30rem' }} />
                 </AccordionButton>
                 <AccordionPanel
                   bgColor='#b2b8bd'
                   pb={4}
-                  fontSize='16rem'
+                  fontSize='14rem'
                   minHeight='70rem'
                   textAlign='center'
                 >
@@ -127,18 +136,18 @@ export default function Reason() {
                   entre o cliente e seu advogado deve ser a pedra fundamental de
                   relacao.
                 </AccordionPanel>
-              </AccordionItem>{' '}
+              </AccordionItem>
               <AccordionItem>
                 <AccordionButton>
-                  <Box as='span' flex='1' fontSize='21rem'>
+                  <Box as='span' flex='1' fontSize={{ d: '21rem', m: '16rem' }}>
                     Qual é a garantia de uma causa ter sucesso?
                   </Box>
-                  <AccordionIcon boxSize='50rem' />
+                  <AccordionIcon boxSize={{ d: '50rem', m: '30rem' }} />
                 </AccordionButton>
                 <AccordionPanel
                   bgColor='#b2b8bd'
                   pb={4}
-                  fontSize='16rem'
+                  fontSize='14rem'
                   minHeight='70rem'
                   textAlign='center'
                 >
@@ -152,7 +161,11 @@ export default function Reason() {
               </AccordionItem>
             </Accordion>
           </Box>
-          <Box w='700rem' h='568rem' bgColor='#003849'></Box>
+          {/* <Box
+            w={{ d: '700rem', m: '375rem' }}
+            h='568rem'
+            bgColor='#003849'
+          ></Box> */}
         </HStack>
       </Box>
       <Box zIndex='2' bgColor='#5F2A2E' w='full' h='21rem' />

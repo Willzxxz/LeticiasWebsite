@@ -37,10 +37,17 @@ export default function ContactForm() {
   }
 
   return (
-    <Box bgColor='#8B565E' w='540rem' h='full' ml='820rem' mt='-500rem'>
+    <Box
+      bgColor='#8B565E'
+      w={{ d: '540rem' }}
+      h='full'
+      ml={{ d: '820rem' }}
+      mt={{ d: '-500rem' }}
+      pb={{ m: '20rem' }}
+    >
       <Center>
         <VStack>
-          <Text mt='30rem' fontSize='36rem' color='white'>
+          <Text mt='30rem' fontSize={{ d: '36rem', m: '24rem' }} color='white'>
             Formulario de Contato
           </Text>
           <form ref={form} onSubmit={sendEmail}>

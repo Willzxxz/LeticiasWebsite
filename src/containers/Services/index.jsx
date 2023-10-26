@@ -12,26 +12,40 @@ import React from 'react'
 export default function Services() {
   return (
     <Box
-      h='850rem'
+      h={{ d: '850rem', m: '710rem' }}
       bgColor='#003849'
       fontFamily='Poppins'
-      p='50rem'
+      w={{ m: '375rem', d: 'full' }}
+      p={{ d: '50rem' }}
+      py={{ m: '20rem' }}
       id='servicos'
     >
-      <Box w='1440rem' mx='auto'>
+      <Box w={{ d: '1440rem', m: '320rem' }} mx='auto'>
         <Box
-          h='750rem'
-          w='1100rem'
+          h={{ d: '750rem', m: '670rem' }}
+          w={{ d: '1100rem', m: 'full' }}
           bgColor='#5F2A2E'
           rounded='100rem'
-          ml='200rem'
+          ml={{ d: '200rem', m: '0rem' }}
+          pr='16rem'
+          pl='30rem'
         >
           <Center>
             <Stack>
-              <Text mt='50rem' fontSize='40rem' color='white' mb='20rem'>
+              <Text
+                mt='50rem'
+                alignSelf='center'
+                fontSize={{ d: '40rem', m: '18rem' }}
+                color='white'
+                mb='20rem'
+              >
                 Quais servicos eu presto?
               </Text>
-              <UnorderedList fontSize='25rem' spacing='20rem' color='white'>
+              <UnorderedList
+                fontSize={{ d: '25rem', m: '14rem' }}
+                spacing='20rem'
+                color='white'
+              >
                 <ListItem>Pesquisa geneologica</ListItem>
                 <ListItem>Montagem de arvore geneologica</ListItem>
                 <ListItem>Retificacao extrajudicial de registro civil</ListItem>

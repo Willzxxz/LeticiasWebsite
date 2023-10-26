@@ -24,7 +24,7 @@ const Home = () => {
       <OperateSection />
       <Services />
       <Reason />
-      <Reviews />
+      {/* <Reviews /> */}
       <CTA />
       <Footer />
     </>
