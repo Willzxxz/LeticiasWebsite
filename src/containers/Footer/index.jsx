@@ -22,9 +22,9 @@ import {
   faTiktok,
   faTelegram,
 } from '@fortawesome/free-brands-svg-icons'
-import ContactForm from 'components/ContectForm'
 import Link from 'next/link'
 import React from 'react'
+import ContactForm from '../../components/ContectForm'
 
 export default function Footer() {
   const isMobile = useBreakpointValue({ m: true, d: false })

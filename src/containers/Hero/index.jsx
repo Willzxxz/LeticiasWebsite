@@ -136,10 +136,9 @@ export default function index() {
                   <Link
                     passHref
                     href='mailto:leticiaportelinha@gmail.com?subject=Cidadenia Pelo Site&body=Ola, procuro informações sobre...'
+                    target='_blank'
                   >
-                    <a target='_blank'>
-                      <Box ml='6rem'>Leticiaportelinha@gmail.com</Box>
-                    </a>
+                    <Box ml='6rem'>Leticiaportelinha@gmail.com</Box>
                   </Link>
                 </Center>
               </Box>
@@ -151,61 +150,67 @@ export default function index() {
                     style={{ color: '#098b30' }}
                     size='xl'
                   />
-                  <Link passHref href='https://wa.me/5548999320387'>
-                    <a target='_blank'>
-                      <Box ml='6rem'>+55 (48) 9932-0387</Box>
-                    </a>
+                  <Link
+                    target='_blank'
+                    passHref
+                    href='https://wa.me/5548999320387'
+                  >
+                    <Box ml='6rem'>+55 (48) 9932-0387</Box>
                   </Link>
                 </Center>
               </Box>
               <Box h='40rem'>
                 <Center color='white' fontSize='15rem' gap='20rem'>
-                  <Link passHref href='https://www.instagram.com/'>
-                    <a target='_blank'>
-                      <Box _hover={{ color: 'black' }}>
-                        <FontAwesomeIcon icon={faInstagram} size='xl' />
-                      </Box>
-                    </a>
+                  <Link
+                    target='_blank'
+                    passHref
+                    href='https://www.instagram.com/'
+                  >
+                    <Box _hover={{ color: 'black' }}>
+                      <FontAwesomeIcon icon={faInstagram} size='xl' />
+                    </Box>
                   </Link>
 
-                  <Link passHref href='https://www.facebook.com/'>
-                    <a target='_blank'>
-                      <Box _hover={{ color: 'black' }}>
-                        <FontAwesomeIcon icon={faFacebook} size='xl' />
-                      </Box>{' '}
-                    </a>
+                  <Link
+                    target='_blank'
+                    passHref
+                    href='https://www.facebook.com/'
+                  >
+                    <Box _hover={{ color: 'black' }}>
+                      <FontAwesomeIcon icon={faFacebook} size='xl' />
+                    </Box>
                   </Link>
 
-                  <Link passHref href='https://www.linkedin.com/'>
-                    <a target='_blank'>
-                      <Box _hover={{ color: 'black' }}>
-                        <FontAwesomeIcon icon={faLinkedin} size='xl' />
-                      </Box>{' '}
-                    </a>
+                  <Link
+                    target='_blank'
+                    passHref
+                    href='https://www.linkedin.com/'
+                  >
+                    <Box _hover={{ color: 'black' }}>
+                      <FontAwesomeIcon icon={faLinkedin} size='xl' />
+                    </Box>
                   </Link>
 
-                  <Link passHref href='https://www.x.com/'>
-                    <a target='_blank'>
-                      <Box _hover={{ color: 'black' }}>
-                        <FontAwesomeIcon icon={faXTwitter} size='xl' />
-                      </Box>{' '}
-                    </a>
+                  <Link target='_blank' passHref href='https://www.x.com/'>
+                    <Box _hover={{ color: 'black' }}>
+                      <FontAwesomeIcon icon={faXTwitter} size='xl' />
+                    </Box>
                   </Link>
 
-                  <Link passHref href='https://www.tiktok.com/'>
-                    <a target='_blank'>
-                      <Box _hover={{ color: 'black' }}>
-                        <FontAwesomeIcon icon={faTiktok} size='xl' />
-                      </Box>{' '}
-                    </a>
+                  <Link target='_blank' passHref href='https://www.tiktok.com/'>
+                    <Box _hover={{ color: 'black' }}>
+                      <FontAwesomeIcon icon={faTiktok} size='xl' />
+                    </Box>
                   </Link>
 
-                  <Link passHref href='https://www.telegram.com/'>
-                    <a target='_blank'>
-                      <Box _hover={{ color: 'black' }}>
-                        <FontAwesomeIcon icon={faTelegram} size='xl' />
-                      </Box>{' '}
-                    </a>
+                  <Link
+                    target='_blank'
+                    passHref
+                    href='https://www.telegram.com/'
+                  >
+                    <Box _hover={{ color: 'black' }}>
+                      <FontAwesomeIcon icon={faTelegram} size='xl' />
+                    </Box>
                   </Link>
                 </Center>
               </Box>
@@ -236,12 +241,11 @@ export default function index() {
                   <Link
                     passHref
                     href='mailto:leticiaportelinha@gmail.com?subject=Cidadenia Pelo Site&body=Ola, procuro informações sobre...'
+                    target='_blank'
                   >
-                    <a target='_blank'>
-                      <Box ml='6rem' _hover={{ color: 'black' }}>
-                        Leticiaportelinha@gmail.com
-                      </Box>
-                    </a>
+                    <Box ml='6rem' _hover={{ color: 'black' }}>
+                      Leticiaportelinha@gmail.com
+                    </Box>
                   </Link>
                 </Center>
               </Box>
@@ -259,10 +263,12 @@ export default function index() {
                     style={{ color: '#098b30' }}
                     size='2xl'
                   />
-                  <Link passHref href='https://wa.me/5548999320387'>
-                    <a target='_blank'>
-                      <Box ml='6rem'>+55 (48) 9932-0387</Box>
-                    </a>
+                  <Link
+                    target='_blank'
+                    passHref
+                    href='https://wa.me/5548999320387'
+                  >
+                    <Box ml='6rem'>+55 (48) 9932-0387</Box>
                   </Link>
                 </Center>
               </Box>
@@ -273,52 +279,56 @@ export default function index() {
                   w={{ d: '290rem' }}
                   gap='20rem'
                 >
-                  <Link passHref href='https://www.instagram.com/'>
-                    <a target='_blank'>
-                      <Box _hover={{ color: 'black' }}>
-                        <FontAwesomeIcon icon={faInstagram} size='xl' />
-                      </Box>
-                    </a>
+                  <Link
+                    target='_blank'
+                    passHref
+                    href='https://www.instagram.com/'
+                  >
+                    <Box _hover={{ color: 'black' }}>
+                      <FontAwesomeIcon icon={faInstagram} size='xl' />
+                    </Box>
                   </Link>
 
-                  <Link passHref href='https://www.facebook.com/'>
-                    <a target='_blank'>
-                      <Box _hover={{ color: 'black' }}>
-                        <FontAwesomeIcon icon={faFacebook} size='xl' />
-                      </Box>{' '}
-                    </a>
+                  <Link
+                    target='_blank'
+                    passHref
+                    href='https://www.facebook.com/'
+                  >
+                    <Box _hover={{ color: 'black' }}>
+                      <FontAwesomeIcon icon={faFacebook} size='xl' />
+                    </Box>
                   </Link>
 
-                  <Link passHref href='https://www.linkedin.com/'>
-                    <a target='_blank'>
-                      <Box _hover={{ color: 'black' }}>
-                        <FontAwesomeIcon icon={faLinkedin} size='xl' />
-                      </Box>{' '}
-                    </a>
+                  <Link
+                    target='_blank'
+                    passHref
+                    href='https://www.linkedin.com/'
+                  >
+                    <Box _hover={{ color: 'black' }}>
+                      <FontAwesomeIcon icon={faLinkedin} size='xl' />
+                    </Box>
                   </Link>
 
-                  <Link passHref href='https://www.x.com/'>
-                    <a target='_blank'>
-                      <Box _hover={{ color: 'black' }}>
-                        <FontAwesomeIcon icon={faXTwitter} size='xl' />
-                      </Box>{' '}
-                    </a>
+                  <Link target='_blank' passHref href='https://www.x.com/'>
+                    <Box _hover={{ color: 'black' }}>
+                      <FontAwesomeIcon icon={faXTwitter} size='xl' />
+                    </Box>
                   </Link>
 
-                  <Link passHref href='https://www.tiktok.com/'>
-                    <a target='_blank'>
-                      <Box _hover={{ color: 'black' }}>
-                        <FontAwesomeIcon icon={faTiktok} size='xl' />
-                      </Box>{' '}
-                    </a>
+                  <Link target='_blank' passHref href='https://www.tiktok.com/'>
+                    <Box _hover={{ color: 'black' }}>
+                      <FontAwesomeIcon icon={faTiktok} size='xl' />
+                    </Box>
                   </Link>
 
-                  <Link passHref href='https://www.telegram.com/'>
-                    <a target='_blank'>
-                      <Box _hover={{ color: 'black' }}>
-                        <FontAwesomeIcon icon={faTelegram} size='xl' />
-                      </Box>{' '}
-                    </a>
+                  <Link
+                    target='_blank'
+                    passHref
+                    href='https://www.telegram.com/'
+                  >
+                    <Box _hover={{ color: 'black' }}>
+                      <FontAwesomeIcon icon={faTelegram} size='xl' />
+                    </Box>
                   </Link>
                 </Center>
               </Box>

@@ -1,6 +1,6 @@
 import { Box, ChakraProvider } from '@chakra-ui/react'
-import theme from 'theme'
-import 'reset.css'
+import theme from '../theme'
+import '../reset.css'
 
 export default function MyApp({ Component, pageProps }) {
   return (
